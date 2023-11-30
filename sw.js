@@ -1,6 +1,6 @@
 const APP_SHELL = [
     '/',
-    'js.js',
+    'js/js.js',
     'css.css',
     'index.html',
 ]
@@ -29,13 +29,16 @@ self.addEventListener('fetch', evento => {
     evento.respondWith( respuestaCache  )
 })
 
+self.addEventListener('install', ()=>{
+    console.log('SW: Instalado.');
+})
 
+self.addEventListener('activate', ()=>{
+    console.log('SW: Activado');
+})
 
-
-
-
-
-
-
-
-
+self.addEventListener('fetch', evento => {
+    const request = evento.request;
+    const url = request.url;
+    console.log(url);
+})

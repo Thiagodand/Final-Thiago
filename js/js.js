@@ -12,14 +12,14 @@ btn.addEventListener('click', () => {
     if (nota !== "") {
         crearNota(nota);
     }
-}); 
+});
 
 function crearNota(nota) {
     nt.push(nota);
     notas.innerHTML = '';
         nt.forEach(not => {
-        notas.innerHTML += `<div class="muestra">
-                                <p class="muestra">${not}</p>
+        notas.innerHTML += `<div class="caja">
+                                <p class="text">${not}</p>
                             </div>`;
         console.log(nota);
     });

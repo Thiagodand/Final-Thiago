@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header{
+    margin-left: 2rem;
+    width: 95%;
+}
+.main{
+    margin-left: 2rem;
+    width: 95%;
+}
 .titulo{
     background-color: rgb(224, 130, 14);
     padding-top: 1rem;
@@ -13,6 +21,7 @@
 .input-not{
     background-color: rgb(224, 130, 14);
     padding-top: 2rem;
+
     padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -22,19 +31,49 @@
     width: 40rem;
     margin: 0 auto;
     margin-bottom: 1em;
-    height: 2rem;
+    height: 5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
 .btn{
     margin-top: 1rem;
-    width: 40rem;
+    background-color: rgb(0, 131, 88);
+    width: 10rem;
+    height: 2rem;
     margin: 0 auto;
     font-size: 1rem;
     border-radius: 0.5rem;
 }
-.muetra{
+.muestra{
+    background-color: black;
     text-align: center;
     align-items: center;
     margin: 0 auto;
+}
+.caja{
+    background-color: rgb(39, 86, 127);
+    padding: 1rem 0rem 1rem 0rem;
+}
+.text{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+}
+
+@media(max-width: 780px){
+    .header{
+        width: 95%;
+    }
+    .main{
+        width: 95%;
+    }
+    .nota{
+        width: 85%;
+    }
+    .text{
+        width: 85%;
+    }
+
 }
