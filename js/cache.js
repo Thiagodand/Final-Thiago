@@ -3,5 +3,4 @@ caches.open('cache-v1').then( ( cache) => {
         '../index.html',
 
     ])
-    
 })
