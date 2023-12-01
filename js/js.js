@@ -15,7 +15,7 @@ btn.addEventListener('click', () => {
 });
 
 function modificarNota(index) {
-    const nuevaNota = prompt("Modifique su nota:", notas[index]);
+    const nuevaNota = prompt("Modifique su nota:", nt[index]);
     if (nuevaNota !== null) {
         nt[index] = nuevaNota;
         actualizarLista();
