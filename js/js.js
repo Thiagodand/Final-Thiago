@@ -2,7 +2,6 @@ var btn = document.querySelector('#btn-guardar');
 var text = document.querySelector('#texto');
 var notas = document.querySelector('#notas');
 var nt = [];
-var actualizarLista=[];
 
 
 if ('serviceWorker' in navigator) {
